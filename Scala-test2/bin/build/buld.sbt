@@ -1,0 +1,5 @@
+package build
+
+class sbt {
+  
+}
