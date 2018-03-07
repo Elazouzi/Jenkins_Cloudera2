@@ -18,7 +18,7 @@ pipeline {
             build 'SampleDeployJob_test'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             build 'Test3A'
           }
@@ -32,7 +32,7 @@ pipeline {
             build 'Remote_Deployment_to_Cloudera_test'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             build 'SampleTestJob_test'
           }
@@ -46,7 +46,7 @@ pipeline {
             build 'SampleTestJob_test'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             build 'SampleTestJob_test'
           }
@@ -60,7 +60,7 @@ pipeline {
     }
     stage('Validation') {
       steps {
-        build 'Test1A2'
+        build 'Test2A'
       }
     }
     stage('Production') {
